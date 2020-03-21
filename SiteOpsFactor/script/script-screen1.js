@@ -37,6 +37,17 @@ function chamaAPISMI(precosAcao, ticker) {
 }
 
 function buildGraphic(precosAcao, valoresMediaMovel, ticker) {
+    let pai = document.querySelector(".container-graphic");
+    let filho = document.querySelector(".chartjs-hidden-iframe");
+    let canvas = document.querySelector(".line-chart");
+
+    if (filho != null) {
+        pai.removeChild(filho);
+        pai.removeChild(canvas);
+        let novoCanvas = document.createElement("canvas");
+        novoCanvas.setAttribute("class", "line-chart");
+        pai.appendChild(novoCanvas);
+    }
     let dataBase = Object.keys(precosAcao["Time Series (Daily)"])[5];
     let listaClose = [];
     let listaData = [];
