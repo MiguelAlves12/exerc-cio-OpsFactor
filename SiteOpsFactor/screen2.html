@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en, pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen2</title>
+    <link rel="stylesheet" href="styles/reset.css" media="all" />
+    <link rel="stylesheet" href="styles/style-screen2.css" media="all" />
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="categ">Categorias</a>
+                <ol class="dropdown-content">
+                    <li class="eletrodomesticos">
+                        <a href="#" onclick="dropdownEletrodomesticos();">Eletrodomésticos</a>
+                        <ul class="dropdown-content2">
+                            <li>
+                                <a href="#" onclick="putImage(this);">
+                                    Geladeira A
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="putImage(this);">
+                                    Geladeira B
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="eletronicos">
+                        <a href="#" onclick="dropdownEletronicos();">Eletrônicos</a>
+                        <ul class="dropdown-content3">
+                            <li>
+                                <a href="#" onclick="putImage(this);">
+                                    Televisão A
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="putImage(this);">
+                                    Televisão B
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <figure>
+            <img class="imagem"></img>
+        </figure>
+
+    </div>
+
+    <script src="script/script-screen2.js"></script>
+</body>
+
+</html>

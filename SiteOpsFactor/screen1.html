@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chart Js - Graphics</title>
+    <link rel="stylesheet" href="styles/reset.css" media="all" />
+    <link rel="stylesheet" href="styles/style-screen1.css" media="all" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <select id="acao" title="selecione" name="select" onchange="selectOption();">
+                <option value="" selected disabled hidden>selecione ação</option>
+                <option value="AAPL">Apple</option> 
+                <option value="X" >US Steel</option>
+                <option value="TSLA">Tesla</option>
+        </select>
+        <div class="container-graphic"><canvas class="line-chart"></canvas></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="script/script-screen1.js"></script>
+
+</body>
+
+</html>

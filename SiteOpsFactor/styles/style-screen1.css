@@ -1,0 +1,33 @@
+.container {
+    border: solid 3px black;
+    background-color: #605eb2;
+    height: 730px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.container-graphic {
+    border: 2px solid black;
+    width: 1000px;
+    height: 500px;
+    margin-left: 10%;
+    margin-top: 10px;
+    background-color: white;
+}
+
+#acao {
+    font-style: "Arial Black", Gadget, sans-serif;
+    height: 30px;
+    width: 160px;
+    font-size: 20px;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#acao option {
+    border: none;
+    border-radius: 10px;
+    font-style: Impact, Charcoal, sans-serif;
+}
